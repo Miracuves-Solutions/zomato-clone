@@ -1,342 +1,121 @@
-# Zomato Clone — White-Label Solution by Miracuves
+# Zomato Clone — White-Label Food Delivery & Restaurant Ordering Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxeats.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/zomato-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxfeast.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/zomato-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/zomato-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXFeast** is a production-ready, white-label Zomato clone: a complete food-delivery platform with customer, restaurant, and delivery-partner apps — delivered with **100% source code ownership** in **6 working days**.
+
+> 🍔 **See it running before you talk to anyone.** Live customer app, restaurant panel, rider app, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/zomato-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxeats.mimeld.com](https://mxeats.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/zomato-clone/#demo) | Users, content, plans, analytics |
+| 📱 Customer App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse restaurants, customize orders, track delivery, pay, rate |
+| 🍽️ Restaurant Panel | [Solution page → Demo](https://miracuves.com/zomato-clone#demo) | Manage menu, orders, prep time, analytics, payouts |
+| 🛵 Delivery Partner App | [Solution page → Demo](https://miracuves.com/zomato-clone#demo) | Accept orders, navigate, batch deliveries, track earnings |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/zomato-clone#demo) | Restaurants, commissions, zones, disputes, finance reports |
 
-Demo credentials: [miracuves.com/zomato-clone -> Demo section](https://miracuves.com/zomato-clone/#demo)
-
-## What Makes This Zomato Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch |
-| Agencies | White-label |
+Demo credentials for all environments: **[miracuves.com/zomato-clone → Demo section](https://miracuves.com/zomato-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Zomato Clone Different
 
-1. User opens
-2. Selects
-3. Completes
-4. Pay
-5. Confirm
+Most food-delivery scripts stop at "browse + cart + checkout." This platform ships with the features that actually run a restaurant-delivery *business*:
 
----
+- **Commission-Free Tier** — let restaurants opt for a 0%-commission self-delivery mode — same app, their riders, your platform revenue from premium features
+- **Multi-Cart Group Orders** — office teams order from 3+ restaurants in one cart with one delivery fee — the feature corporate clients actually pay for
+- **Cloud Kitchen Native** — dark stores, virtual brands, KDS (kitchen display), and packaging rules built in — not bolted on as a settings page
+- **Dine-In + Delivery Unified** — one menu serves QR-table-ordering, takeaway, and delivery — restaurants don't manage three separate systems
+- **AI Demand Forecasting** — predicts order volume per zone per hour so restaurants pre-prep and riders pre-position — cuts wait times 20%
 
-## Core Features
+## 📦 Core Features
 
-### Customer App
-- Restaurant discovery
-- Menu browsing
-- Cart & checkout
-- Live order tracking
-- Push notifications
-- Saved addresses
-- Payment methods
-- Order history & reorder
-- Reviews & ratings
+**Customer:** browse restaurants · cuisine search · order customization · scheduled delivery · live tracking · multi-payment · ratings · 1-tap reorder · group orders · in-app chat
 
-### Restaurant Panel
-- Menu management
-- Order dashboard
-- Analytics & reports
-- Promotions & discounts
-- Customer reviews
+**Restaurant:** menu builder · order management · prep-time settings · delivery radius · sales analytics · promo tools · payout requests · in-app chat
 
-### Driver App
-- Order dispatch
-- Navigation
-- Delivery confirmation
-- Earnings dashboard
-- Availability toggle
+**Delivery Partner:** auto-assigned orders · navigation · multi-order batching · earnings dashboard · instant pay · performance score
 
-### Admin Panel
-- Restaurant onboarding
-- Commission management
-- User management
-- Analytics dashboard
-- Promo campaigns
-- Customer support
+**Admin:** restaurant onboarding · commission engine · delivery zone management · dispute resolution · dynamic commission · finance reports
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Automation
-- **AI Delivery Routing** - Optimizes multi-stop delivery sequences
-- **AI Demand Forecasting** - Predicts order volume by time/location
-- **AI Menu Recommendations** - Personalized dish suggestions
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Diner | Explore,order |
-| Restaurant | Manage |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Customer App<br/>Flutter]
+    B[Restaurant Dashboard]
+    W[Delivery Partner App]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> MQ[WebSocket<br/>Order Stream]
+    MQ --> A
+    MQ --> W
+    G --> PAY[Stripe/Razorpay]
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps · Node.js or Laravel backend · MongoDB or PostgreSQL · real-time order stream via WebSocket · Stripe, Razorpay & regional gateways · Google Maps / Mapbox for routing
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$3,399**, transparent on the [solution page](https://miracuves.com/zomato-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium
-- Commission per order (15-25%)
-- Delivery fee
-- Restaurant subscription plans
-- Featured listings
-- Promoted restaurants
-- In-app advertising
+Custom food-delivery platforms run $80k–$400k and 6–12 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for restaurant onboarding and rider incentives.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Zomato Clone — Full Solution Page](https://miracuves.com/zomato-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Food Delivery App Cost in 2026?](https://miracuves.com/zomato-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Zomato Clone Script in 2026](https://miracuves.com/zomato-clone/blog/) features, pricing & launch guide
+- 🧠 [Why Cloud Kitchens Need a Different POS](https://miracuves.com/zomato-clone/blog/) KDS, virtual brands, packaging rules
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/zomato-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$3,399** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/zomato-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Diner
-- Restaurant
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: zomato clone, zomato clone script, food delivery app development, restaurant ordering, white label food delivery, cloud kitchen, Flutter food app, Node.js food platform*
 
 ---
-**Pricing:** from **$3,399** — transparent on the [solution page](https://miracuves.com/zomato-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$3,399 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital
-- Restaurant food delivery
-- Cloud kitchen delivery
-- Corporate lunch catering
-- Grocery delivery
-- Alcohol delivery
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**Cost?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/zomato-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your restaurant discovery platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/zomato-clone](https://miracuves.com/zomato-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: zomato clone, zomato script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Zomato Clone
+{MX_NAME}         MXFeast
+{CATEGORY}        Food Delivery & Restaurant Ordering Platform
+{DEMO_WEB}        mxfeast.mimeld.com
+{PRICE}           $3,399
+{SLUG}            zomato-clone
+{SOLUTION_URL}    https://miracuves.com/zomato-clone/
+{VERTICAL}        food_delivery
+
+See /tmp/verticals/food_delivery.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
